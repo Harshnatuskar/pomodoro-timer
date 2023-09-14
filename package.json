@@ -3,7 +3,10 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://harshnatuskar.github.io/pomodoro-timer",
   "scripts": {
+    "predeploy":"npm run build",
+    "deploy":"vite build && gh-pages -d dist",
     "dev": "vite",
     "build": "tsc && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
